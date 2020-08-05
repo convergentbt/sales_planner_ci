@@ -25,9 +25,12 @@ if(isset($_POST['Submit']))
 			foreach ($Spreadsheet as $Key => $Row) {
 //						if($count != 0){
 				$i = 0;
+//				$name[$i] = isset($Row[$i]) ? $Row[$i] : '';
+//				print_r($Row);
+//				exit;
 				while($i < 1000){
 				 $name[$i] = isset($Row[$i]) ? $Row[$i] : '';
-					print_r($name);
+					print_r($name[$i]);
 					echo '<br/>';
 					$i++;
 				}
